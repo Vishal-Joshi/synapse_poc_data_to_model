@@ -30,7 +30,7 @@ outputs:
 
 baseCommand: [java, "-jar"]
 arguments:
-  - valueFrom: validator.jar
+  - valueFrom: /Users/vjoshi/aa/metal_challenge/unp.aa.metalchallenge.validate/target/validator.jar
   - prefix: -s
     valueFrom: $(inputs.input_file)
   - prefix: -e
