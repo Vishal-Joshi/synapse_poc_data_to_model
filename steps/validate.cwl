@@ -30,7 +30,7 @@ outputs:
 
 baseCommand: [java, "-jar"]
 arguments:
-  - valueFrom: /validator.jar
+  - valueFrom: validator.jar
   - prefix: -s
     valueFrom: $(inputs.input_file)
   - prefix: -e
