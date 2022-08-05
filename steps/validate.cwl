@@ -28,7 +28,7 @@ outputs:
       outputEval: $(JSON.parse(self[0].contents)['submission_errors'])
       loadContents: true
 
-baseCommand: [java, "-jar", "validator.jar"]
+baseCommand: [java, "-jar", "validator1.jar"]
 arguments:
   - prefix: -s
     valueFrom: $(inputs.input_file)
