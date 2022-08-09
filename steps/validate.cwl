@@ -29,7 +29,7 @@ requirements:
 
             invalid_reasons = []
             prediction_file_status = "VALIDATED"
-            if not len(message.split("\t")) < 4:
+            if len(message.split("\t")) < 4:
                 invalid_reasons.append("Submission must have 4 columns, at least")
                 prediction_file_status = "INVALID"
         result = {'submission_errors': "\n".join(invalid_reasons),
